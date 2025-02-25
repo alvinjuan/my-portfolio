@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* assigned mostly used colors and gradient to easier to type variable names*/
+:root{
+    --primary-color: #1e1e1d;
+    --primary-color-dark: #161513;
+    --primary-color-light: #a3a3a3;
+    --white: #ffffff;
+    --max-width: 900px;
+    --gradient-1: linear-gradient(to right bottom, #f77d6b, #9e1fdb);
+    --gradient-2: linear-gradient(to right bottom, var(--white) 25%, var(--primary-color));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transform: 0.3s;
+}
+
+/* remove the bullet points from the list */
+ul {
+    list-style: none;
+}
+
+/* scroll behavior of the website is smoooth */
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* changed the font and background color of the website */
+body {
+    font-family: "Poppins", serif;
+    background-color: var(--primary-color-dark);
+}
+
+/* extends the navigation bar at the top of the website */
+/* need more notes: maybe setting up for responsiveness?*/
+.nav__bar {
+    position: fixed;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    z-index: 9;
+}
+
+/* aligns the menu bar and logo in the same axis and changes the color to dark gray*/
+.nav__header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav__logo a {
+    font-size: 1.2 rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links a {
+    color: var(--primary-color-light);
+}
+
+.nav__links a:hover {
+    color: var(--white);
+}
