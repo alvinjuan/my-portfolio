@@ -108,3 +108,38 @@ body {
 .nav__links a:hover {
     color: var(--white);
 }
+
+@media (width > 768px){
+    nav {
+        background-color: var(--primary-color);
+    }
+
+    .nav__bar {
+        position: static;
+        padding: 1.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .nav__header{
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__menu__btn {
+        display: none;
+    }
+
+    .nav__links {
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 4rem;
+        background-color: transparent;
+        transform: none;
+        z-index: 1;
+    }
+}
