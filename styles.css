@@ -7,6 +7,7 @@
     --primary-color-light: #a3a3a3;
     --white: #ffffff;
     --max-width: 900px;
+    /* color gradient goes from top left to bottom right */
     --gradient-1: linear-gradient(to right bottom, #f77d6b, #9e1fdb);
     --gradient-2: linear-gradient(to right bottom, var(--white) 25%, var(--primary-color));
 }
@@ -69,7 +70,7 @@ body {
 }
 
 .nav__logo a {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--white);
 }
@@ -109,6 +110,79 @@ body {
     color: var(--white);
 }
 
+/* changes the size of the image */
+.header__container img {
+    max-width: 200px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+/* changes color, alignment, and font-size of h1*/
+.header__container h1 {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.header__container h1 span {
+    /* sets the span's background to the gradient*/
+    background-image: var(--gradient-1);
+    /* cuts the image to the words and the text becomes transparent to replicate the illusion of image masking*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* centered, change text color, and aligned text to center for p tag*/
+.header__container p {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-inline: auto;
+    color: var(--primary-color-light);
+    text-align: center;
+}
+
+/* aligns the buttons inside the header btns div*/
+.header__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.header__btns .btn {
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color-dark);
+    background-color: var(--white);
+    border-radius: 5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header__btns a {
+    padding: calc(0.75rem - 2px) calc(1.5rem - 2px);
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 5rem;
+    border: 2px solid var(--white);
+}
+
+.header__btns a:hover {
+    color: var(--primary-color-dark); /* affects the text color*/
+    background-color: var(--white); /* affects the background color*/
+}
+
+
+
+/* mediaqueries */
+/* the following css styles will apply after the screen width is bigge than 768px*/
 @media (width > 768px){
     nav {
         background-color: var(--primary-color);
