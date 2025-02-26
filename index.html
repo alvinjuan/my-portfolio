@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Portfolio</title>
 </head>
@@ -13,7 +16,6 @@
 <body>
     <!-- NAVIGATION BAR-->
     <nav>
-
         <div class="nav__bar">
             <div class="nav__header">
                 <div class="nav__logo">
@@ -34,8 +36,8 @@
 
     <!-- HEADER AND ITS CONTENTS-->
     <header class="section__container header__container" id="home">
-        <img src="assets/avatar.png" alt="header">
-        <h1>I do code and <br> make content <span>about it!</span></h1>
+        <img src="assets/avatar.jpg" alt="header">
+        <h1>Alvin Jasper Juan</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores voluptate nobis dignissimos, iste, ex
             nesciunt soluta qui voluptatum ratione ipsum magni optio molestiae doloremque, recusandae fugit. Harum
@@ -47,29 +49,68 @@
         </div>
     </header>
 
-    <!-- EXPERIENCE SECTION -->
+    <!-- EXPERIENCE -->
     <section class="section__container skill__container">
         <h2>EXPERIENCE WITH</h2>
         <ul class="skill__flex">
             <li>
-                <span><i class="ri-java-line"></i></span>
+                <span><i class="fa-brands fa-python"></i></span>
             </li>
             <li>
-                <span><i class="ri-javascript-fill"></i></span>
+                <span><i class="fa-brands fa-java"></i></span>
             </li>
             <li>
-                <span><i class="ri-html5-fill"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
             </li>
             <li>
-                <span><i class="ri-css3-fill"></i></span>
+                <span><i class="fa-brands fa-html5"></i></span>
             </li>
             <li>
-                <span><i class="ri-reactjs-line"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
             </li>
             <li>
-                <span><i class="ri-nodejs-line"></i></span>
+                <span><i class="fa-solid fa-database"></i></span>
+            </li>
+            <li>
+                <span><i class="fa-brands fa-react"></i></span>
+            </li>
+            <li>
+                <span><i class="fa-brands fa-node-js"></i></span>
+            </li>
+            <li>
+                <span><i class="fa-brands fa-aws"></i></span>
+            </li>
+            <li>
+                <span><i class="fa-brands fa-docker"></i></span>
             </li>
         </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section__container project__container" id="project">
+        <h2>PROJECTS</h2>
+        <div class="project__grid">
+            <div class="project__card">
+                <img src="assets/project-1.jpg" alt="project">
+                <div class="project__card__details">
+                    <div>
+                        <p>Seamless User Experience</p>
+                        <h4>Stunning Landing Page</h4>
+                    </div>
+                    <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+            <div class="project__card">
+                <img src="assets/project-2.jpg" alt="project">
+                <div class="project__card__details">
+                    <div>
+                        <p>Discover New Destinations</p>
+                        <h4>Explore the World</h4>
+                    </div>
+                    <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://unpkg.com/scrollreveal"></script>
