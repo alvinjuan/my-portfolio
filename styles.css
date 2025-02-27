@@ -254,7 +254,54 @@ body {
     color: var(--white);
 }
 
+.experience__container h2 {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+}
 
+.experience__list {
+    display: grid;
+    gap: 3rem;
+}
+
+.experience__header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* the role and company logo are aligned in the same line */
+.experience__header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* changes the size of the image */
+.experience__header img {
+    max-width: 25px;
+}
+
+.experience__header h4 {
+    color: var(--white);
+    font-display: 1.2rem;
+    font-weight: 600;
+}
+
+.experience__header p {
+    color: var(--primary-color-light);
+    white-space: nowrap;
+}
+
+.experience__list li p {
+    color: var(--primary-color-light);
+}
 
 /* mediaqueries */
 /* the following css styles will apply after the screen width is bigger than 768px*/
