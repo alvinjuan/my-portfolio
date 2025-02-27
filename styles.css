@@ -120,7 +120,7 @@ body {
 
 /* changes color, alignment, and font-size of h1*/
 .header__container h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 3.5rem;
     line-height: 4rem;
     color: var(--white);
@@ -133,6 +133,16 @@ body {
     /* cuts the image to the words and the text becomes transparent to replicate the illusion of image masking*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.header__container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 /* centered, change text color, and aligned text to center for p tag*/
@@ -302,6 +312,54 @@ body {
 .experience__list li p {
     color: var(--primary-color-light);
 }
+
+footer {
+    background-color: var(--primary-color);
+}
+
+.footer__container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer__container p {
+    margin-bottom: 1rem;
+    color: var(--primary-color-light);
+}
+
+.footer__container .mail__to a {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color-light);
+}
+
+.mail__to a span {
+    font-size: 1rem;
+}
+
+.footer__container .mail__to:hover a {
+    color: var(--white);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    font-size: 1.25rem;
+    color: var(--primary-color-light);
+}
+
+.footer__socials a:hover {
+    color: var(--white);
+}
+
 
 /* mediaqueries */
 /* the following css styles will apply after the screen width is bigger than 768px*/
