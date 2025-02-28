@@ -311,6 +311,7 @@ body {
 
 .experience__list li p {
     color: var(--primary-color-light);
+    margin-bottom: 10px;
 }
 
 footer {
